@@ -1,0 +1,15 @@
+/* HELPER CLASSES (reusable styles)
+------------------------------------------------- */
+/*For the todo list */
+.todo{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 3px;
+  border: 1.5px solid #cccccc;
+  margin-top: 5px;
+}
+
+
