@@ -1,3 +1,10 @@
+<?php 
+    include "db.inc.php";
+// query statement variable (contain SQL statement)
+    $query = "SELECT * FROM todo";
+    $result= mysqli_query($connection, $query);
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,6 +40,13 @@
             <th> Delete Todo</th>
           </thead>
           <tbody>
+          <?php
+          // a while loop
+             while ($row = mysqli_fetch_assoc($result)){
+               echo $row['id']. "<br>";
+             } 
+
+          ?>
             <tr>
               <td>1</td>
               <td>Morning Physical exercise</td>
